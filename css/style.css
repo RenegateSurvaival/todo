@@ -14,10 +14,11 @@ body {
 	height: 100vh;
 }
 .todo {
-	width: 40%;
-	height: 70%;
+	width: 350px;
+	height: 600px;
+	
 	background-color: aliceblue;
-	padding: 1.5%;
+	padding: .8%;
 	border-radius: 8px;
 }
 .todo [type="text"] {
@@ -56,6 +57,10 @@ body {
 	border-radius: 10px;
 	padding: 2%;
 }
+.todo span {
+	font-size: larger;
+	word-break: break-all;
+}
 .controls {
 	display: flex;
 	margin-left: auto;
@@ -76,8 +81,8 @@ body {
 	display: flex;
 	align-self: center;
 	background-color: white;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	border: black 1px solid;
 	margin: 0 15px;
 	cursor: pointer;
@@ -85,7 +90,6 @@ body {
 }
 .complited {
 	background-color: green;
-	background-image: url('../img/complited.png');
 	background-size: 100%;
 }
 .complited-span {
