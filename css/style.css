@@ -85,7 +85,7 @@ body {
 }
 .complited {
 	background-color: green;
-	background-image: url('/img/complited.png');
+	background-image: url('../img/complited.png');
 	background-size: 100%;
 }
 .complited-span {
