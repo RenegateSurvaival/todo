@@ -1,0 +1,94 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: darkblue;
+}
+.wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+.todo {
+	width: 40%;
+	height: 70%;
+	background-color: aliceblue;
+	padding: 1.5%;
+	border-radius: 8px;
+}
+.todo [type="text"] {
+	width: 80%;
+	height: 10%;
+	font-size: 23px;
+}
+.todo>button {
+	float: right;
+	width: calc(20% - 3px);
+	height: 10%;
+	background-color: firebrick;
+	color: white;
+	cursor: pointer;
+	margin-left: 3px;
+}
+.todo>button:hover {
+	color: blue;
+	background-color: bisque;
+}
+.list-container {
+	display: flex;
+	flex-direction: column;
+	height: 90%;
+	width: 100%;
+	padding: 5%;
+	overflow: auto;
+}
+.list-element {
+	position: relative;
+	display: flex;
+	min-width: 100%;
+	min-height: 20%;
+	background-color: #6e27b18e;
+	margin: 1.2% 0;
+	border-radius: 10px;
+	padding: 2%;
+}
+.controls {
+	display: flex;
+	margin-left: auto;
+}
+.del {
+	background-color: crimson;
+	color: white;
+	padding: 3px;
+	cursor: pointer;
+}
+.del:hover {
+	background-color: darkred;
+}
+.list-element span {
+	align-self: center;
+}
+.psevdochek {
+	display: flex;
+	align-self: center;
+	background-color: white;
+	width: 40px;
+	height: 40px;
+	border: black 1px solid;
+	margin: 0 15px;
+	cursor: pointer;
+	transition: background-color .5s;
+}
+.complited {
+	background-color: green;
+	background-image: url('/img/complited.png');
+	background-size: 100%;
+}
+.complited-span {
+	color: #777;
+	background-color: #6e27b157;
+}
